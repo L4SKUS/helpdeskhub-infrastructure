@@ -1,7 +1,7 @@
 resource "aws_cloudfront_distribution" "helpdeskhub_app_distribution" {
   origin {
     domain_name = aws_s3_bucket_website_configuration.helpdeskhub_app_website.website_endpoint
-    origin_id   = "S3-React-App"
+    origin_id   = "s3-helpdeskhub-app"
 
     custom_origin_config {
       http_port              = 80
@@ -17,7 +17,7 @@ resource "aws_cloudfront_distribution" "helpdeskhub_app_distribution" {
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
     cached_methods   = ["GET", "HEAD"]
-    target_origin_id = "S3-React-App"
+    target_origin_id = "s3-helpdeskhub-app"
     forwarded_values {
       query_string = false
       cookies {
