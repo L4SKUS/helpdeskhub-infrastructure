@@ -11,7 +11,7 @@ resource "aws_db_instance" "helpdeskhub_users_db" {
   allocated_storage    = 7
   identifier           = "helpdeskhub-users-db"
   engine               = "postgres"
-  engine_version       = "17.2"
+  engine_version       = "17.4"
   instance_class       = "db.t4g.micro"
   username             = "postgres"
   password             = "postgres"
@@ -29,7 +29,7 @@ resource "aws_db_instance" "helpdeskhub_tickets_db" {
   allocated_storage    = 7
   identifier           = "helpdeskhub-tickets-db"
   engine               = "postgres"
-  engine_version       = "17.2"
+  engine_version       = "17.4"
   instance_class       = "db.t4g.micro"
   username             = "postgres"
   password             = "postgres"
@@ -47,7 +47,7 @@ resource "aws_db_instance" "helpdeskhub_comments_db" {
   allocated_storage    = 7
   identifier           = "helpdeskhub-comments-db"
   engine               = "postgres"
-  engine_version       = "17.2"
+  engine_version       = "17.4"
   instance_class       = "db.t4g.micro"
   username             = "postgres"
   password             = "postgres"

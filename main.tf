@@ -12,9 +12,17 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
+    kubernetes = {
+      source  = "hashicorp/kubernetes"
+      version = ">= 2.37.0"
+    }
   }
 }
 
 provider "aws" {
   region = "eu-central-1"
+}
+
+provider "kubernetes" {
+  config_path = "~/.kube/config"
 }
