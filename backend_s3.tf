@@ -1,4 +1,4 @@
-### ALL OF THE RESOURCES BELOW HAVE BEEN REMOVED FROM THE TFSTATE ###
+### ALL OF THE RESOURCES BELOW HAVE BEEN REMOVED FROM TFSTATE ###
 
 # resource "aws_s3_bucket" "helpdeskhub_tfstate" {
 #   bucket        = "helpdeskhub-tfstate-bucket"
